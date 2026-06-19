@@ -15,10 +15,17 @@ same tools are simultaneously connectable from Claude Desktop.
 
 ## Screenshots
 
-<!-- TODO: drop images in /docs and update these links -->
-- **Dashboard** — `docs/dashboard.png` _(KPIs, sales trend, inventory by plant, order-status donuts, top customers/materials)_
-- **Command Center** — `docs/command-center.png` _(chat on the left, live MCP tool-call feed on the right)_
-- **Systems** — `docs/systems.png` _(three auto-registered systems and the tools each exposes)_
+### Dashboard — KPIs & Sales Trend
+![Dashboard](screenshots/dashboard.png)
+
+### Dashboard — Inventory, Top Customers & Materials
+![Dashboard Charts](screenshots/dashboard-charts.png)
+
+### Command Center — Plain English → Live MCP Tool Calls
+![Command Center](screenshots/command-center.png)
+
+### Systems — Auto-registered from `systems.config.json`
+![Systems](screenshots/systems.png)
 
 ---
 
