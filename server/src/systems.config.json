@@ -1,0 +1,20 @@
+[
+  {
+    "id": "sap_erp",
+    "label": "SAP ERP (Master Data)",
+    "layer": "master",
+    "capabilities": ["ping", "get_material", "list_materials", "get_customer", "get_vendor", "list_plants"]
+  },
+  {
+    "id": "sap_s4",
+    "label": "SAP S/4HANA (Transactional)",
+    "layer": "transactional",
+    "capabilities": ["ping", "get_sales_orders", "get_purchase_orders", "get_deliveries"]
+  },
+  {
+    "id": "sap_bw",
+    "label": "SAP BW (Analytics)",
+    "layer": "analytics",
+    "capabilities": ["ping", "list_queries", "run_query"]
+  }
+]

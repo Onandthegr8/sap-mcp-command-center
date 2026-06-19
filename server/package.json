@@ -1,0 +1,26 @@
+{
+  "name": "server",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "MCP gateway + REST bridge over three synthetic SAP systems (master / transactional / analytics).",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "node --watch src/index.js",
+    "start": "node src/index.js",
+    "seed": "node src/data/generate.js",
+    "smoke": "node test/smoke.js"
+  },
+  "dependencies": {
+    "@faker-js/faker": "^9.4.0",
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "better-sqlite3": "^12.2.0",
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "uuid": "^11.0.0",
+    "zod": "^3.24.1"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

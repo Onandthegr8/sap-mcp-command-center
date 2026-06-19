@@ -1,0 +1,9 @@
+{
+  "_comment": "Copy this block into your claude_desktop_config.json (Claude Desktop → Settings → Developer → Edit Config). Start the gateway first with `npm run dev`, then restart Claude Desktop. Alternatively, paste http://localhost:3041/sse directly into Settings → Connectors.",
+  "mcpServers": {
+    "sap-mcp-command-center": {
+      "command": "npx",
+      "args": ["-y", "mcp-remote", "http://localhost:3041/sse"]
+    }
+  }
+}

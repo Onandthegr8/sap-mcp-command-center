@@ -1,0 +1,26 @@
+{
+  "name": "sap-mcp-command-center",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Three synthetic SAP systems behind ONE MCP gateway, with a Next.js dashboard + plain-English command center. No real SAP, no LLM API key.",
+  "workspaces": [
+    "server",
+    "web"
+  ],
+  "scripts": {
+    "dev": "concurrently -k -n server,web -c green,cyan \"npm run dev -w server\" \"npm run dev -w web\"",
+    "dev:server": "npm run dev -w server",
+    "dev:web": "npm run dev -w web",
+    "seed": "npm run seed -w server",
+    "reset": "npm run seed -w server",
+    "smoke": "npm run smoke -w server",
+    "build": "npm run build -w web"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.0"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "MIT"
+}
